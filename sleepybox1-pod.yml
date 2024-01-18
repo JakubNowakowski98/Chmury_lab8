@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: sleepybox1
+  namespace: restricted
+  labels:
+    name: sleepybox1
+spec:
+  containers:
+  - name: sleepybox
+    image: busybox
+    command: ["sleep", "3600"]
